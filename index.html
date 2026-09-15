@@ -5,204 +5,155 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SureTips - VIP Football Predictions</title>
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:#0b1020;color:white}
-header{background:#111b3a;padding:20px;text-align:center}
-.logo{font-size:32px;font-weight:bold;color:#ffd700}
-.hero{padding:30px;text-align:center;background:linear-gradient(135deg,#13204a,#0b1020)}
-.btn{display:inline-block;padding:12px 22px;margin:8px;background:#ffd700;color:#000;text-decoration:none;border-radius:8px;font-weight:bold}
-.section{padding:20px}
-.card{background:#18264d;padding:15px;border-radius:12px;margin-bottom:15px}
-.hidden{display:none}
-footer{background:#111b3a;text-align:center;padding:20px}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#0f172a;color:#fff}
+header{background:linear-gradient(135deg,#16a34a,#14532d);padding:25px;text-align:center}
+header h1{font-size:34px}
+header p{margin-top:8px;color:#d1fae5}
+nav{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;padding:15px;background:#111827}
+nav a{text-decoration:none;color:#fff;background:#16a34a;padding:10px 16px;border-radius:8px;font-weight:bold}
+section{padding:25px}
+.card{background:#1e293b;padding:18px;border-radius:15px;margin-bottom:18px}
+.match{display:flex;justify-content:space-between;border-bottom:1px solid #334155;padding:8px 0}
+.lock{color:#fbbf24;font-weight:bold}
+button{background:#16a34a;color:white;border:none;padding:12px 18px;border-radius:10px;font-weight:bold;cursor:pointer}
+#previousResults{display:none}
+footer{background:#111827;text-align:center;padding:20px;margin-top:30px;color:#94a3b8}
 </style>
 </head>
 <body>
 
 <header>
-<div class="logo">SURETIPS</div>
-<p>Daily VIP Football Predictions</p>
+<h1>⚽ SureTips</h1>
+<p>Premium Football Predictions | VIP Winning Tips</p>
 </header>
 
-<section class="hero">
-<h1>Win Smarter With SureTips</h1>
-<p>Get premium football predictions after payment confirmation.</p>
-<a href="#vip" class="btn">View VIP Packages</a>
-</section>
+<nav>
+<a href="#today">Today's Prediction</a>
+<a href="#vip">VIP</a>
+<a href="#payment">Payment</a>
+<a href="#support">Support</a>
+</nav>
 
-<section class="section">
-<h2>Today's Free Preview</h2>
+<section id="today">
 <div class="card">
-<p><b>12 Selected Matches</b></p>
-<p>Predictions are locked until payment.</p>
-<p>🔒 VIP Members Only</p>
+<h2>🔥 Today's Prediction</h2>
+<p>Today's premium picks are ready.</p>
+<br>
+
+<div class="match"><span>Arsenal vs Brighton</span><span class="lock">🔒 VIP</span></div>
+<div class="match"><span>Liverpool vs Wolves</span><span class="lock">🔒 VIP</span></div>
+<div class="match"><span>Real Madrid vs Valencia</span><span class="lock">🔒 VIP</span></div>
+<div class="match"><span>Barcelona vs Getafe</span><span class="lock">🔒 VIP</span></div>
+<div class="match"><span>Inter Milan vs Lazio</span><span class="lock">🔒 VIP</span></div>
+<div class="match"><span>Juventus vs Bologna</span><span class="lock">🔒 VIP</span></div>
+<div class="match"><span>Bayern vs Freiburg</span><span class="lock">🔒 VIP</span></div>
+<div class="match"><span>Dortmund vs Mainz</span><span class="lock">🔒 VIP</span></div>
+<div class="match"><span>PSG vs Nantes</span><span class="lock">🔒 VIP</span></div>
+<div class="match"><span>Ajax vs Utrecht</span><span class="lock">🔒 VIP</span></div>
+<div class="match"><span>Benfica vs Braga</span><span class="lock">🔒 VIP</span></div>
+<div class="match"><span>Celtic vs Hearts</span><span class="lock">🔒 VIP</span></div>
+
+<br>
+<button onclick="document.getElementById('previousResults').style.display='block';this.style.display='none';">📅 Previous 7 Days Results</button>
+</div>
+
+<div id="previousResults" class="card">
+<h2>Previous 7 Days Results</h2>
+
+<h3>Monday</h3>
+<div class="match"><span>Man City vs Everton</span><span>GG ✅</span></div>
+<div class="match"><span>Chelsea vs Villa</span><span>No GG ❌</span></div>
+
+<h3>Tuesday</h3>
+<div class="match"><span>Roma vs Napoli</span><span>GG ✅</span></div>
+<div class="match"><span>PSV vs AZ</span><span>GG ✅</span></div>
+
+<h3>Wednesday</h3>
+<div class="match"><span>Sevilla vs Betis</span><span>No GG ✅</span></div>
+<div class="match"><span>Marseille vs Lyon</span><span>GG ❌</span></div>
+
+<h3>Thursday</h3>
+<div class="match"><span>Porto vs Sporting</span><span>GG ✅</span></div>
+<div class="match"><span>Rangers vs Aberdeen</span><span>No GG ✅</span></div>
+
+<h3>Friday</h3>
+<div class="match"><span>Leverkusen vs Stuttgart</span><span>GG ✅</span></div>
+<div class="match"><span>Monaco vs Nice</span><span>No GG ❌</span></div>
+
+<h3>Saturday</h3>
+<div class="match"><span>Milan vs Torino</span><span>GG ✅</span></div>
+<div class="match"><span>Atletico vs Villarreal</span><span>No GG ✅</span></div>
+
+<h3>Sunday</h3>
+<div class="match"><span>Newcastle vs West Ham</span><span>GG ✅</span></div>
+<div class="match"><span>Feyenoord vs Twente</span><span>No GG ✅</span></div>
 </div>
 </section>
 
-<section id="vip" class="section">
-<h2>VIP Packages</h2>
+<section id="vip">
+<div class="card">
+<h2>💎 VIP Packages</h2>
 
 <div class="card">
 <h3>$10 VIP</h3>
-<p>Access today's premium predictions.</p>
-<button class="btn" onclick="showPayment()">Buy Now</button>
+<p>5 Premium Matches</p>
+<p>Prediction and Result included after purchase.</p>
 </div>
 
 <div class="card">
 <h3>$20 VIP</h3>
-<p>Premium football predictions.</p>
-<button class="btn" onclick="showPayment()">Buy Now</button>
+<p>8 Premium Matches</p>
+<p>Prediction and Result included after purchase.</p>
 </div>
 
 <div class="card">
 <h3>$30 VIP</h3>
-<p>VIP prediction access.</p>
-<button class="btn" onclick="showPayment()">Buy Now</button>
+<p>12 Premium Matches</p>
+<p>Prediction and Result included after purchase.</p>
 </div>
 
 <div class="card">
-<h3>$50 VVIP</h3>
-<p>Elite predictions.</p>
-<button class="btn" onclick="showPayment()">Buy Now</button>
+<h3>🔥 VVIP $50-$100</h3>
+<p>Exclusive High-Confidence Predictions.</p>
 </div>
 
-<div class="card">
-<h3>$100 VVIP</h3>
-<p>Highest confidence selections.</p>
-<button class="btn" onclick="showPayment()">Buy Now</button>
 </div>
 </section>
 
-<section id="payment" class="section hidden">
-<h2>Payment</h2>
+<section id="payment" style="background:linear-gradient(135deg,#f59e0b,#d97706);border-radius:20px;margin:20px;">
+<h2 style="text-align:center;">💳 VIP Payment</h2>
+<p style="text-align:center;">Pay using any method below.</p>
 
-<div class="card">
-<h3>Skrill</h3>
-<p>Email: **kipkiruibenard4465@gmail.com**</p>
+<div class="card" style="background:rgba(255,255,255,0.12);">
+<h3>📱 M-PESA</h3>
+<p><strong>Till Number:</strong> 1714273</p>
 </div>
 
-<div class="card">
-<h3>Bitcoin</h3>
-<p>Send BTC to your wallet address.</p>
+<div class="card" style="background:rgba(255,255,255,0.12);">
+<h3>💳 Skrill</h3>
+<p><strong>Email:</strong> cynthiakp4465@gmail.com</p>
 </div>
 
-<div class="card">
-<p>After payment, send proof and you'll receive today's predictions manually.</p>
+<div class="card" style="background:rgba(255,255,255,0.12);">
+<h3>₿ BTC</h3>
+<p>Request BTC wallet address after selecting your package.</p>
 </div>
+
+<p style="text-align:center;margin-top:20px;">Send payment proof and receive your VIP predictions manually.</p>
 </section>
 
-<section class="section">
-<h2>Today's Locked Predictions</h2>
-
+<section id="support">
 <div class="card">
-<p>Arsenal vs Chelsea</p>
-<p><b>Prediction:</b> 🔒 Locked</p>
-<p><b>Result:</b> Pending</p>
-</div>
-
-<div class="card">
-<p>Barcelona vs Sevilla</p>
-<p><b>Prediction:</b> 🔒 Locked</p>
-<p><b>Result:</b> Pending</p>
-</div>
-
-<div class="card">
-<p>Inter vs Milan</p>
-<p><b>Prediction:</b> 🔒 Locked</p>
-<p><b>Result:</b> Pending</p>
-</div>
-
-<div class="card">
-<p>Bayern vs Dortmund</p>
-<p><b>Prediction:</b> 🔒 Locked</p>
-<p><b>Result:</b> Pending</p>
-</div>
-
-<div class="card">
-<p>Real Madrid vs Valencia</p>
-<p><b>Prediction:</b> 🔒 Locked</p>
-<p><b>Result:</b> Pending</p>
-</div>
-
-<div class="card">
-<p>PSG vs Marseille</p>
-<p><b>Prediction:</b> 🔒 Locked</p>
-<p><b>Result:</b> Pending</p>
-</div>
-
-<div class="card">
-<p>Liverpool vs Tottenham</p>
-<p><b>Prediction:</b> 🔒 Locked</p>
-<p><b>Result:</b> Pending</p>
-</div>
-
-<div class="card">
-<p>Juventus vs Napoli</p>
-<p><b>Prediction:</b> 🔒 Locked</p>
-<p><b>Result:</b> Pending</p>
-</div>
-
-<div class="card">
-<p>Ajax vs PSV</p>
-<p><b>Prediction:</b> 🔒 Locked</p>
-<p><b>Result:</b> Pending</p>
-</div>
-
-<div class="card">
-<p>Porto vs Benfica</p>
-<p><b>Prediction:</b> 🔒 Locked</p>
-<p><b>Result:</b> Pending</p>
-</div>
-
-<div class="card">
-<p>Galatasaray vs Fenerbahce</p>
-<p><b>Prediction:</b> 🔒 Locked</p>
-<p><b>Result:</b> Pending</p>
-</div>
-
-<div class="card">
-<p>Celtic vs Rangers</p>
-<p><b>Prediction:</b> 🔒 Locked</p>
-<p><b>Result:</b> Pending</p>
-</div>
-</section>
-
-<section class="section">
-<h2>Previous Week Results</h2>
-<button class="btn" onclick="toggleResults()">View Previous Results</button>
-
-<div id="results" class="hidden">
-<div class="card">Arsenal vs Chelsea — Result: ✅</div>
-<div class="card">Barcelona vs Sevilla — Result: ❌</div>
-<div class="card">Inter vs Milan — Result: ✅</div>
-<div class="card">Bayern vs Dortmund — Result: ✅</div>
-<div class="card">Liverpool vs Tottenham — Result: ❌</div>
-<div class="card">Juventus vs Napoli — Result: ✅</div>
-<div class="card">Ajax vs PSV — Result: ✅</div>
-</div>
-</section>
-
-<section class="section">
-<h2>Book Your VIP Access</h2>
-<div class="card">
-<p>Make payment through Skrill or Bitcoin, then contact support with your proof of payment.</p>
+<h2>📧 Support</h2>
+<p>Email us anytime.</p>
+<p><strong>johnbeilly85@gmail.com</strong></p>
 </div>
 </section>
 
 <footer>
-<h3>Support Contact</h3>
-<p>Email: cynthiakp4465@gmail.com</p>
-<p>SureTips © 2026</p>
+© 2026 SureTips. All Rights Reserved.
 </footer>
-
-<script>
-function showPayment(){
-document.getElementById("payment").classList.remove("hidden");
-document.getElementById("payment").scrollIntoView({behavior:"smooth"});
-}
-function toggleResults(){
-document.getElementById("results").classList.toggle("hidden");
-}
-</script>
 
 </body>
 </html>
